@@ -1,35 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-    <title>Flashcards</title>
-      <link rel="stylesheet" href="style.css">
-      </head>
-      <body>
-        <h1>Flashcards de Perguntas</h1>
-          <div class="flashcards-container">
-              <div class="card">
-                    <img src="images/imagem1.jpg" alt="Imagem 1">
-                          <div class="question">Qual é a capital do Brasil?</div>
-                                <div class="answer">Brasília</div>
-                                    </div>
-
-                                        <div class="card">
-                                              <img src="images/imagem2.jpg" alt="Imagem 2">
-                                                    <div class="question">Quem foi Albert Einstein?</div>
-                                                          <div class="answer">Um físico teórico famoso pela Teoria da Relatividade.</div>
-                                                              </div>
-
-                                                                  <!-- Adicione mais flashcards aqui -->
-                                                                    </div>
-
-                                                                      <script>
-                                                                          // Alternar entre pergunta e resposta ao clicar
-                                                                              document.querySelectorAll('.card').forEach(card => {
-                                                                                    card.addEventListener('click', () => {
-                                                                                            card.classList.toggle('show-answer');
-                                                                                                  });
-                                                                                                      });
-                                                                                                        </script>
-                                                                                                        </body>
-                                                                                                        </html>
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+   <meta charset="UTF-8">
+     <title>Flashcards</title>
+       <link rel="stylesheet" href="style.css">
+       </head>
+       <body>
+         <h1>Flashcards Educativos</h1>
+           <div class="flashcards-container">
+           
+               <div class="card">
+                     <div class="card-inner">
+                             <div class="card-front">
+                                       <img src="images/imagem1.jpg" alt="Mapa do Brasil">
+                                                 <div class="question">Qual é a capital do Brasil?</div>
+                                                         </div>
+                                                                 <div class="card-back">
+                                                                           <div class="answer">Brasília</div>
+                                                                                   </div>
+                                                                                         </div>
+                                                                                             </div>
+                                                                                             
+                                                                                                 <div class="card">
+                                                                                                       <div class="card-inner">
+                                                                                                               <div class="card-front">
+                                                                                                                         <img src="images/imagem2.jpg" alt="Albert Einstein">
+                                                                                                                                   <div class="question">Quem foi Albert Einstein?</div>
+                                                                                                                                           </div>
+                                                                                                                                                   <div class="card-back">
+                                                                                                                                                             <div class="answer">Físico teórico, criador da Teoria da Relatividade.</div>
+                                                                                                                                                                     </div>
+                                                                                                                                                                           </div>
+                                                                                                                                                                               </div>
+                                                                                                                                                                               
+                                                                                                                                                                                   <div class="card">
+                                                                                                                                                                                         <div class="card-inner">
+                                                                                                                                                                                                 <div class="card-front">
+                                                                                                                                                                                                           <img src="images/imagem3.jpg" alt="Planta">
+                                                                                                                                                                                                                     <div class="question">O que é fotossíntese?</div>
+                                                                                                                                                                                                                             </div>
+                                                                                                                                                                                                                                     <div class="card-back">
+                                                                                                                                                                                                                                               <div class="answer">Processo em que plantas transformam luz em energia.</div>
+                                                                                                                                                                                                                                                       </div>
+                                                                                                                                                                                                                                                             </div>
+                                                                                                                                                                                                                                                                 </div>
+                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                     <div class="card">
+                                                                                                                                                                                                                                                                           <div class="card-inner">
+                                                                                                                                                                                                                                                                                   <div class="card-front">
+                                                                                                                                                                                                                                                                                             <img src="images/imagem4.jpg" alt="Planeta Terra">
+                                                                                                                                                                                                                                                                                                       <div class="question">Quantos planetas há no Sistema Solar?</div>
+                                                                                                                                                                                                                                                                                                               </div>
+                                                                                                                                                                                                                                                                                                                       <div class="card-back">
+                                                                                                                                                                                                                                                                                                                                 <div class="answer">Oito planetas.</div>
+                                                                                                                                                                                                                                                                                                                                         </div>
+                                                                                                                                                                                                                                                                                                                                               </div>
+                                                                                                                                                                                                                                                                                                                                                   </div>
+                                                                                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                                       <!-- Você pode adicionar mais seguindo esse padrão -->
+                                                                                                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                                                                         </div>
+                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                           <script>
+                                                                                                                                                                                                                                                                                                                                                               document.querySelectorAll('.card').forEach(card => {
+                                                                                                                                                                                                                                                                                                                                                                     card.addEventListener('click', () => {
+                                                                                                                                                                                                                                                                                                                                                                             card.classList.toggle('flipped');
+                                                                                                                                                                                                                                                                                                                                                                                   });
+                                                                                                                                                                                                                                                                                                                                                                                       });
+                                                                                                                                                                                                                                                                                                                                                                                         </script>
+                                                                                                                                                                                                                                                                                                                                                                                         </body>
+                                                                                                                                                                                                                                                                                                                                                                                         </html>                                                                                                  </html>
